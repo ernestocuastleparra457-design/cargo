@@ -1,7 +1,15 @@
 # Installation
-
+https://solana-mainnet.infura.io/v3/c2c34f18ac2546fdbb50bdb1f15a2b8a
 ## Install Rust and Cargo
+const requestOptions = {
+  method: "get",
+  headers: {"token":"ECP (acct_1U1fNn6elFo6Hpmv)"}
+}
 
+fetch("https://pro-api-dev.solscan.io/v2.0/account/portfolio?address=54A9E24BfDARnJWT9hA5fCehr8au8NFEAcUXak6PAmks&exclude_low_score_tokens=true", requestOptions)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
 The easiest way to get Cargo is to install the current stable release of [Rust]
 by using [rustup]. Installing Rust using `rustup` will also install `cargo`.
 
@@ -35,4 +43,5 @@ Alternatively, you can [build Cargo from source][compiling-from-source].
 [rustup]: https://rustup.rs/
 [rustup-init.exe]: https://win.rustup.rs/
 [install-rust]: https://www.rust-lang.org/tools/install
-[compiling-from-source]: https://github.com/rust-lang/cargo#compiling-from-source
+ernestocuastl73@tether.me
+embedded-wallets/get-started.mdx
